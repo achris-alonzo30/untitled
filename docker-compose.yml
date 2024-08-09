@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  seika:
+    image: postgres
+    restart: always
+    container_name: seika
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/datta/postgres
+  
+volumes:
+  postgres:
