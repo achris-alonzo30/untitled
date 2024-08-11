@@ -24,6 +24,7 @@ export default function RootLayout({
           <main className="flex flex-col h-full w-full">
             {children}
           </main>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>
