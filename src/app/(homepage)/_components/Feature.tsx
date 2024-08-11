@@ -26,9 +26,9 @@ export const Feature = () => {
                     width={250}
                     height={250}
                     quality={100}
-                    className="object-cover w-full h-full"
-                    src="/feature.avif"
-                    alt="Feature Furniture Image"
+                    src="/product-5.webp"
+                    alt="Domino Bookshelf"
+                    className="object-cover w-full h-full rounded-sm"
                 />
                 </div>
             </aside>

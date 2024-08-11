@@ -10,12 +10,13 @@ export const Newsletter = () => {
                 required
                 type="email"
                 name="email"
-                className="max-w-lg flex-1"
+                className="max-w-lg flex-1 rounded-none rounded-l-lg h-9"
                 placeholder="Enter your email"
             /> 
             <Button
                 size="sm"
                 type="submit"
+                className="rounded-none rounded-r-lg"
             >
                 Submit
             </Button>   
