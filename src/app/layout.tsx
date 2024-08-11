@@ -21,7 +21,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body className={`${GeistSans.variable} antialiased`}>
           <Header />
-          <main className="flex flex-col h-full w-full">
+          <main className="flex flex-col h-full w-full max-w-7xl">
             {children}
           </main>
           <Footer />
