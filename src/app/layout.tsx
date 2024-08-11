@@ -3,6 +3,7 @@ import { type Metadata } from "next";
 
 import { GeistSans } from "geist/font/sans";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Header } from "@/components/Header";
 
 
 export const metadata: Metadata = {
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={`${GeistSans.variable}`}>
+        <body className={`${GeistSans.variable} h-full w-full`}>
+          <Header />
           {children}
         </body>
       </html>
